@@ -22,9 +22,23 @@ def home(request):
     
     return render(request, 'home.html',{})
 
-def contact(request):
-    print("contacto")
-  
+def frances(request):
+    return render(request,'frances.html',{})
+def italiano(request):
+    return render(request,'italiano,html',{})
+def tecnico(request):
+    return render(request,'tecnico.html',{})
+def conversacional(request):
+    return render(request,'conversacional.html',{})
+
+def signup(request):
+    fname = request.POST['fname']
+    femail = request.POST['femail']
+    fpassword = request.POST['fpassword']
+    
+    return render(request,'signup.html',  {"fname" : fname})
+
+    
         
 
     
