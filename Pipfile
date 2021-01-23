@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "==2.2"
 psycopg2-binary = "*"
+gunicorn = "*"
+django-heroku = "*"
+python-decouple = "*"
 
 [dev-packages]
 
